@@ -1,0 +1,458 @@
+
+body{
+    background-color: none;
+   
+}
+/* Lamborghini animated*/
+#showcase h1{
+    font-family: Lamachina;
+    color: white;
+    font-size: 10rem;
+    text-align: center;
+    line-height: 40vh;
+
+}
+/* First part of animation*/
+span{
+    opacity: 0;
+    transition: all 5s ease;
+    transform: translateY(10px);
+}
+/* Second part of animation*/
+span.fade{
+    opacity: 1;
+    transition: all 5s ease;
+    
+}
+/* Section that keeps the pic*/
+#showcase{
+    height: 90vh;
+    background-image:url("home-images/background.jpg");
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+}
+@font-face{
+    font-family: Lamachina;
+    src: url('La Macchina.ttf') format('truetype');
+}
+.container{
+    width: 80%;
+    margin:auto;
+    overflow: hidden;
+}
+
+
+#header{
+    background-color: black;
+    color: #ffffff;
+    border-bottom: goldenrod 3px solid;
+}
+/* Nav bar*/
+#header a{
+    color:#ffffff;
+    text-decoration: solid;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+#header ul{
+    margin: 0;
+    padding: 0;
+
+}
+#header li{
+    display: inline;
+    padding: 0px 20px;
+}
+/* Lamborghini logo*/
+#header #branding{
+    font-family: Lamachina;
+    float:left;
+    margin: 0px;
+    padding-bottom: 20px;
+}
+#header nav{
+    float:right;
+    margin-top: 30px;
+}
+
+footer{
+    padding:20px;
+    color: ghostwhite;
+    background-color: goldenrod;
+    text-align: center;
+}
+/* button specs*/
+.btn{
+    position: relative;
+    color: white ;
+    font-family:Arial, Helvetica, sans-serif;
+    border: 0.5px  goldenrod;
+    overflow: hidden;
+    transition: 1s all ease;
+}
+
+.btn::before{
+background: goldenrod;
+content: "";
+width: 100%;
+height: 100%;
+position: absolute;
+top: 50%;
+left: 50%;
+z-index: -1;
+transition: all 0.6s;
+}
+
+.btn:focus{
+    outline: none;
+}
+
+.btn:hover{
+    background: gold;
+    cursor: pointer;
+}
+.btn:hover::before{
+    transform: translateX(300px) skewX(-15deg);
+    opacity: .6;
+    transition: .7s;
+
+}
+.btn:hover::after{
+    transform: translateX(300px) skewX(-15deg);
+    opacity: .1;
+    transition: .7s;
+
+}
+
+
+/* History body*/
+#bomboclaat{
+    margin: 0;
+    padding: 0;
+    
+}
+/* timeline position*/
+.timeline{
+    position: relative;
+    margin: 50px auto;
+    max-width: 1000px;
+}
+
+.timeline:before{
+    content: '';
+    position: absolute;
+    left: 50%;
+    width: 2px;
+    height: 100%;
+    background: #c5c5c5;
+
+}
+
+.timeline ul{
+    margin: 0;
+    padding: 0;
+    
+}
+.timeline ul li{
+    line-height: normal;
+    position: relative;
+    width: 50%;
+    padding: 20px 40px;
+    box-sizing: border-box;
+    right: -12px;
+}
+/* Alignment of text in history*/
+.timeline ul li:nth-child(odd){
+    float: left;
+    text-align: right;
+    clear:both
+
+}
+.timeline ul li:nth-child(even){
+    float: right;
+    text-align: left;
+    clear: both;
+}
+.content
+{
+    padding-bottom: 20px;
+}
+.timeline ul li:nth-child(odd):before
+{
+    content: '';
+    position: absolute;
+    top: 28px;
+    right: 6px;
+    width: 10px;
+    height: 10px;
+    background: goldenrod;
+    border-radius:50% ;
+    box-shadow: 0 0 0 3px goldenrod;
+}
+.timeline ul li:nth-child(even):before
+{
+    content: '';
+    position: absolute;
+    top: 28px;
+    left: -15px;
+    width: 10px;
+    height: 10px;
+    background: goldenrod;
+    border-radius:50% ;
+    box-shadow: 0 0 0 3px goldenrod;
+}
+
+
+/* Title of Event*/
+.timeline ul li h3{
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    color: goldenrod;
+}
+.timeline ul li p{
+    margin: 10px 0 0;
+    padding-bottom: 0;
+}
+.timeline ul li .timeline{
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    color: black;
+}
+.timeline ul li .time h4{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+/* Date in History*/
+.timeline ul li:nth-child(odd) .time{
+    position: absolute;
+    top: 12px;
+    right:-165px;
+    margin: 0;
+    padding: 8px 16px;
+    background: goldenrod;
+    color: black;
+    border-radius: 16px;
+    box-shadow: 0 0 0 3px goldenrod;
+
+}
+/* Date in History*/
+.timeline ul li:nth-child(even) .time{
+    position: absolute;
+    top: 12px;
+    left:-165px;
+    margin: 0;
+    padding: 8px 16px;
+    background: goldenrod;
+    border-radius: 16px;
+    box-shadow: 0 0 0 3px goldenrod;
+    
+
+}
+/*The models*/
+.container2{
+    background-color: black;
+    position: relative;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 15vh;
+    padding-bottom: 15vh;
+}
+.container2 .box{
+    position: relative;
+    width: 480px;
+    height: 525px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.container2 .box:hover{
+    z-index: 1;
+    transform: scale(1.2);
+    position: relative;
+    box-shadow: 0 25px 40px rgba(0,0,0,5);
+}
+
+.container2 .box .imgbx{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.container2 .box .imgbx:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: linear-gradient(180deg,rgb(216, 216, 216),#000);
+    mix-blend-mode: multiply;
+    opacity: 0;
+    transition: 0.5s;
+
+}
+.container2 .box:hover .imgbx:before{
+    opacity: 1;
+}
+.container2 .box .imgbx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.container2 .box .content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    display: flex;
+    padding: 20px;
+    align-items: flex-end;
+
+}
+
+.container2 .box .content h2{
+    color: #fff;
+    transition: 0.5s;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    font-size: 20px;
+    transform: translateY(200px);
+
+}
+.container2 .box:hover .content h2{
+    transform: translateY(0);
+    transition-delay: 0.5s;
+
+}
+.container2 .box .content p{
+    color: #fff;
+    transform: translateY(200px);
+    transition: 0.5s;
+    font-size: 14px;
+}
+.container2 .box:hover .content p{
+    transform: translateY(0);
+    transition-delay: 0.5s;
+
+}
+.container2 .box .content button{
+    color: white;
+    background-color: goldenrod;
+    border: none;
+    transition: 0.5s;
+    margin-bottom: 5px;
+    font-size: 20px;
+    transform: translateY(200px);
+}
+.container2 .box:hover .content button{
+    transform: translateY(0);
+    transition-delay: 0.5s;
+}
+
+/*About part beginning*/
+
+@import url('https://fonts.googleapis.com/css?family=Allura|Josefin+Sans');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background: hsl(90, 4%, 91%);
+  font-family: 'Josefin Sans', sans-serif;
+  
+}
+
+.wrapper{
+  margin-top: 10%;
+}
+/*Title of "Developers"*/
+.wrapper h1{
+  font-family: Monotype Corsiva;
+  font-size: 90px;
+  margin-bottom: 90px;
+  text-align: center;
+}
+
+.team{
+  display: flex;
+  justify-content: center;
+  width: auto;
+  text-align: center;
+  flex-wrap: wrap;
+}
+/*Manage the positions of the Giray and Endrit part*/
+.team .team_member{
+  background: #fff;
+  margin: 10px;
+  margin-bottom: 60px;
+  width: 600px;
+  padding: 20px;
+  line-height: 20px;
+  color: #8e8b8b;  
+  position: relative;
+}
+/* Picture member margin and names size you can manage*/
+.team .team_member h3{
+  color: rgb(247, 203, 92);
+  font-size: 46px;
+  margin-top: 100px;
+}
+/* You can contorl "DEVEPOLER" text in the about*/
+.team .team_member p.role{
+  color: #ccc;
+  margin: 20px 0;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+/* you can manage picture position*/
+.team .team_member .team_img{
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-70%);
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+/*you can controll pictures width and height and padding*/
+.team .team_member .team_img img{
+  width: 170px;
+  height: 170px;
+  padding: 0px;
+}
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
